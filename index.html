@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+  <body>
+     <!-- Write your markup here  -->
+     <section class='intro'>
+       <div class='inner'>
+        <div class='content'>
+          <h1>Astro Calculator</h1>
+          <a class='btn' href='#astro'>Get Started</a>
+          </div>
+        </div>
+     </section>
+     <section class='main-body' id='astro'>
+       <div class='inner-body'>
+        <div class='container'>
+        <div class='panel panel-default'>
+          <div class='panel-heading text-center'>Astro Calculator</div>
+          <div class='panel-body'>
+            <div class='row'>
+              <div class='col-sm-4'>
+                <h4> Your weight</h4>
+                <input id='user-weight' type='number' placeholder='Please Enter Your Weight.'/>
+              </div>
+              <div class='col-sm-4'>
+                <h4>Select a Planet</h4>
+                <select id='planets'>
+                    <option value='Pluto'>Pluto</option>
+                    <option value='Neptune'>Neptune</option>
+                    <option value='Uranus'>Uranus</option>
+                    <option value='Saturn'>Saturn</option>
+                    <option value='Jupiter'>Jupiter</option>
+                    <option value='Mars'>Mars</option>
+                    <option value='Moon'>Moon</option>
+                    <option value='Earth'>Earth</option>
+                    <option value='Venus'>Venus</option>
+                    <option value='Mercury'>Mercury</option>
+                    <option value='Sun'>Sun</option>
+                </select>
+              </div>
+              <div class='col-sm-4>'>
+                <button id='calculate-button' class='button btn-primary'>
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class='panel-footer'>
+            <p id='output'></p>
+          </div>
+        </div>
+        </div>
+       </div>
+     </section>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
